@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace lnwPay.Client
-{
-    public class InwPayDepositSettings
-    {
-    }
-}
+namespace lnwPay.Client;
+    public record InwPayDepositSettings(
+    string WebsitePrefix,
+    string WebsiteToken,
+    string ClientAccount,
+    string ClientAccountName,
+    string ClientBank,
+    Guid FormId,
+    Uri RedirectUrl
+  );
