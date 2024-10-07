@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Payment.LnwPay.Client</RootNamespace>
     <SqlQueryToolsConnectionString />
-    <Version>0.0.12</Version>
+    <Version>0.0.13</Version>
     <Authors>Lumi</Authors>
     <Company>Lumi</Company>
     <PackageId>Payment.LnwPay.Client</PackageId>
