@@ -7,19 +7,19 @@ FROM hub.lumigame.com/base/dotnet/core/sdk:8.0-alpine AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["nuget.config", "."]
-COPY ["Saba.Payment.lnwPay/Saba.Payment.lnwPay.csproj", "Saba.Payment.lnwPay/"]
-COPY ["lnwPay.Core/lnwPay.Core.csproj", "lnwPay.Core/"]
-COPY ["lnwPay.Client/lnwPay.Client.csproj", "lnwPay.Client/"]
-RUN dotnet restore "./Saba.Payment.lnwPay/Saba.Payment.lnwPay.csproj"
+COPY ["Saba.Payment.LnwPay/Saba.Payment.LnwPay.csproj", "Saba.Payment.LnwPay/"]
+COPY ["LnwPay.Core/LnwPay.Core.csproj", "LnwPay.Core/"]
+COPY ["LnwPay.Client/LnwPay.Client.csproj", "LnwPay.Client/"]
+RUN dotnet restore "./Saba.Payment.LnwPay/Saba.Payment.LnwPay.csproj"
 COPY . .
-WORKDIR "/src/Saba.Payment.lnwPay"
-RUN dotnet build "./Saba.Payment.lnwPay.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Saba.Payment.LnwPay"
+RUN dotnet build "./Saba.Payment.LnwPay.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Saba.Payment.lnwPay.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Saba.Payment.LnwPay.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Saba.Payment.lnwPay.dll"]
+ENTRYPOINT ["dotnet", "Saba.Payment.LnwPay.dll"]

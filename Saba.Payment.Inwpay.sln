@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saba.Payment.lnwPay", "Saba.Payment.lnwPay\Saba.Payment.lnwPay.csproj", "{7511F180-40F6-4065-B47B-3629A55F579D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Saba.Payment.LnwPay", "Saba.Payment.lnwPay\Saba.Payment.LnwPay.csproj", "{7511F180-40F6-4065-B47B-3629A55F579D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lnwPay.Client", "lnwPay.Client\lnwPay.Client.csproj", "{BCF8F728-F8D5-4DA5-B3A9-EFA4DF848C61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LnwPay.Client", "lnwPay.Client\LnwPay.Client.csproj", "{BCF8F728-F8D5-4DA5-B3A9-EFA4DF848C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lnwPay.Core", "lnwPay.Core\lnwPay.Core.csproj", "{8394EFB1-77C2-4156-AF16-58FDAB9C3613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LnwPay.Core", "lnwPay.Core\LnwPay.Core.csproj", "{8394EFB1-77C2-4156-AF16-58FDAB9C3613}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

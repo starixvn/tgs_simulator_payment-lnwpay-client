@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lnwPay.Client
 {
-    public class InwPayDepositResponse
+    public class LnwPayUtility
     {
     }
 }

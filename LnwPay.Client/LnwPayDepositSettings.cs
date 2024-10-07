@@ -1,7 +1,7 @@
 ﻿
 
 namespace lnwPay.Client;
-    public record InwPayDepositSettings(
+    public record LnwPayDepositSettings(
     string WebsitePrefix,
     string WebsiteToken,
     string ClientAccount,
