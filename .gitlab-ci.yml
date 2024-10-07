@@ -1,6 +1,6 @@
 variables:
  PUBLISH_NUGET: "true"
- PROJECT_FOLDER: lnwPay.Client
+ PROJECT_FOLDER: LnwPay.Client
 
 include:
  - project: ci/core-cicd
