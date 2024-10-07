@@ -1,0 +1,6 @@
+@Saba.Payment.lnwPay_HostAddress = http://localhost:5140
+
+GET {{Saba.Payment.lnwPay_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
