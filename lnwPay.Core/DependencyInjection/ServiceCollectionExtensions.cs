@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lnwPay.Core.DependencyInjection
+namespace LnwPay.Core.DependencyInjection
 {
     internal class ServiceCollectionExtensions
     {

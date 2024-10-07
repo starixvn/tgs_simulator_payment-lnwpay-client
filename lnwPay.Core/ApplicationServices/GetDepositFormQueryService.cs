@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lnwPay.Core.ApplicationServices
+namespace LnwPay.Core.ApplicationServices
 {
     internal class GetDepositFormQueryService
     {

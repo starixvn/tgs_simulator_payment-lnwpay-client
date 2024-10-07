@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lnwPay.Core.MessageQueue
+namespace LnwPay.Core.MessageQueue
 {
     internal class DepositProcessor
     {
